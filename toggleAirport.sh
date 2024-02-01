@@ -30,7 +30,8 @@ function set_airport {
 }
 
 function notify {
-    osascript -e "display notification \"$1\" with title \"Wi-Fi Toggle\""
+    # osascript -e "display notification \"$1\" with title \"Wi-Fi Toggle\""
+    terminal-notifier -title "Wi-Fi Toggle" -message "$1"
 }
 
 # Set default values
